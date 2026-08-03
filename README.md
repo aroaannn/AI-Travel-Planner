@@ -29,29 +29,44 @@ An intelligent, full-stack web application that generates comprehensive, custom 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher).
+lose, but not quite! I can see exactly what is happening by looking at "Screenshot 2026-08-03 at 22.28.28.jpg".
 
-### 1. Clone the repository
+You are still manually highlighting the text with your mouse cursor. Because of how this chat interface is built, when you click and drag your mouse over a code box, it secretly grabs hidden labels that the webpage uses behind the scenes (which is why the words "Bash" on line 39 and "Code snippet" on line 44 suddenly appeared in your GitHub editor). It also deleted the special backticks ( ` ) needed to format the code.
+
+Let's bypass the chat formatting completely.
+
+I am going to write the exact text you need below as plain text (no special dark boxes).
+
+How to fix it:
+Go to your GitHub editor from your screenshot.
+Delete everything from line 32 down to the bottom.
+Now, highlight the text below, copy it, and paste it into GitHub.
+1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/ai-travel-planner.git](https://github.com/YOUR_USERNAME/ai-travel-planner.git)
+git clone https://github.com/YOUR_USERNAME/ai-travel-planner.git
 cd ai-travel-planner
+```
+
 2. Install dependencies
-Bash
+```bash
 npm install
+```
+
 3. Set up Environment Variables
 Create a .env.local file in the root directory and add your keys:
 
-Code snippet
+```env
 GEMINI_API_KEY=your_gemini_api_key_here
 UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
 OPENWEATHER_API_KEY=your_openweather_api_key_here
-4. Run the development server
-Bash
-npm run dev
-Open http://localhost:3000 in your browser.
+```
 
-📂 Project Structure
-Plaintext
+4. Run the development server
+```bash
+npm run dev
+```
+5. 📂 Project Structure
+```bash
 ai-travel-planner/
 ├── app/
 │   ├── api/
@@ -68,9 +83,4 @@ ai-travel-planner/
 │   └── schema.ts               # TypeScript schemas
 ├── public/                     # Static assets
 └── package.json                # Dependencies and scripts
-🌐 Deployment
-This application is optimized for deployment on Vercel.
-Push your code to GitHub.
-Import your repository into Vercel.
-Add your environment variables (GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, OPENWEATHER_API_KEY).
-Click Deploy.
+```
