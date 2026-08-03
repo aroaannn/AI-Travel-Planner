@@ -20,77 +20,18 @@ An intelligent, full-stack web application that generates comprehensive, custom 
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React, Next.js (App Router), Tailwind CSS, Framer Motion (Animations)
+* **Frontend:** React, Next.js (App Router), Tailwind CSS, Framer Motion
 * **Backend:** Next.js API Routes (Serverless Functions)
-* **APIs:** 
-  * Google Gemini API (AI Generation)
-  * Unsplash API (Images)
-  * OpenWeatherMap API (Weather)
-* **Utilities:** html2pdf.js (PDF generation)
+* **APIs:** Google Gemini API, Unsplash API, OpenWeatherMap API
 
 ---
 
-## 🚀 Getting Started (Local Development)
-
-Follow these instructions to set up the project locally on your machine.
+## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher is recommended).
+Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher).
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/ai-travel-planner.git](https://github.com/YOUR_USERNAME/ai-travel-planner.git)
+git clone https://github.com/YOUR_USERNAME/ai-travel-planner.git
 cd ai-travel-planner
-
-2. Install dependencies
-Bash
-npm install
-3. Set up Environment Variables
-Create a .env.local file in the root directory of the project and add your API keys:
-
-Code snippet
-# Google Gemini API Key (Must start with AIza...)
-GEMINI_API_KEY=your_gemini_api_key_here
-
-# Unsplash API Access Key
-UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
-
-# OpenWeatherMap API Key
-OPENWEATHER_API_KEY=your_openweather_api_key_here
-4. Run the development server
-Bash
-npm run dev
-Open http://localhost:3000 in your browser to view the application.
-
-📂 Project Structure
-Plaintext
-ai-travel-planner/
-├── app/
-│   ├── api/
-│   │   ├── image/route.ts      # Unsplash image fetching endpoint
-│   │   ├── plan/route.ts       # Gemini AI itinerary generation endpoint
-│   │   └── weather/route.ts    # OpenWeather fetching endpoint
-│   ├── globals.css             # Global Tailwind styles
-│   ├── layout.tsx              # Root Next.js layout
-│   └── page.tsx                # Main application UI & frontend logic
-├── components/
-│   ├── LocationImage.tsx       # Component for rendering Unsplash images
-│   └── Map.tsx                 # Interactive map component
-├── lib/
-│   └── schema.ts               # TypeScript interfaces & AI data schemas
-├── public/                     # Static assets
-├── .env.local                  # Environment variables (git-ignored)
-└── package.json                # Project dependencies and scripts
-🌐 Deployment
-This Next.js application is optimized for deployment on Vercel.
-Push your code to a GitHub repository.
-Log in to Vercel and create a new project.
-Import your GitHub repository.
-In the Vercel deployment settings, add your three environment variables (GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, OPENWEATHER_API_KEY).
-Click Deploy.
-📝 Note on Rate Limits
-Unsplash Free Tier: Limited to 50 requests per hour. If exceeded, the app will gracefully fall back to default placeholder images.
-Gemini Free Tier: Subject to RPM (Requests Per Minute) and RPD (Requests Per Day) limits.
-📄 License
-This project is open-source and available under the MIT License.
-
