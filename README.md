@@ -33,5 +33,44 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18.x or higher).
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-travel-planner.git
+git clone [https://github.com/YOUR_USERNAME/ai-travel-planner.git](https://github.com/YOUR_USERNAME/ai-travel-planner.git)
 cd ai-travel-planner
+2. Install dependencies
+Bash
+npm install
+3. Set up Environment Variables
+Create a .env.local file in the root directory and add your keys:
+
+Code snippet
+GEMINI_API_KEY=your_gemini_api_key_here
+UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
+OPENWEATHER_API_KEY=your_openweather_api_key_here
+4. Run the development server
+Bash
+npm run dev
+Open http://localhost:3000 in your browser.
+
+📂 Project Structure
+Plaintext
+ai-travel-planner/
+├── app/
+│   ├── api/
+│   │   ├── image/route.ts      # Unsplash image fetching endpoint
+│   │   ├── plan/route.ts       # Gemini AI itinerary generation endpoint
+│   │   └── weather/route.ts    # OpenWeather fetching endpoint
+│   ├── globals.css             # Global Tailwind styles
+│   ├── layout.tsx              # Root Next.js layout
+│   └── page.tsx                # Main application UI & frontend logic
+├── components/
+│   ├── LocationImage.tsx       # Unsplash image component
+│   └── Map.tsx                 # Interactive map component
+├── lib/
+│   └── schema.ts               # TypeScript schemas
+├── public/                     # Static assets
+└── package.json                # Dependencies and scripts
+🌐 Deployment
+This application is optimized for deployment on Vercel.
+Push your code to GitHub.
+Import your repository into Vercel.
+Add your environment variables (GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, OPENWEATHER_API_KEY).
+Click Deploy.
