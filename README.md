@@ -29,18 +29,8 @@ An intelligent, full-stack web application that generates comprehensive, custom 
 ## 🚀 Getting Started
 
 ### Prerequisites
-lose, but not quite! I can see exactly what is happening by looking at "Screenshot 2026-08-03 at 22.28.28.jpg".
 
-You are still manually highlighting the text with your mouse cursor. Because of how this chat interface is built, when you click and drag your mouse over a code box, it secretly grabs hidden labels that the webpage uses behind the scenes (which is why the words "Bash" on line 39 and "Code snippet" on line 44 suddenly appeared in your GitHub editor). It also deleted the special backticks ( ` ) needed to format the code.
 
-Let's bypass the chat formatting completely.
-
-I am going to write the exact text you need below as plain text (no special dark boxes).
-
-How to fix it:
-Go to your GitHub editor from your screenshot.
-Delete everything from line 32 down to the bottom.
-Now, highlight the text below, copy it, and paste it into GitHub.
 1. Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/ai-travel-planner.git
